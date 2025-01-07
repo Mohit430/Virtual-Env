@@ -31,5 +31,5 @@ def data(request):
     profile_pic=request.FILES.get('profile_pic')
     age=request.POST.get('age')
 
-    print(username,email,detail,profile_pic,age,resume,gender,phone,volume)
+    print(username,email,detail,profile_pic,age,resume,gender,phone,volume,subscribe)
     Students.objects.create(username=username,email=email,dob=dob,profile_pic=profile_pic,age=age,resume=resume,gender=gender,phone=phone,volume=volume,subscribe=subscribe)
